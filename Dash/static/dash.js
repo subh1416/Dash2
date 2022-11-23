@@ -31,7 +31,10 @@ const graphData = {
       },
     ],
   },
-  options: {},
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+  },
 };
 const myChart = new Chart(ctx, graphData);
 
@@ -63,8 +66,7 @@ socket.onopen = function (e) {
 };
 
 socket.onmessage = function (e) {
-
-// table starts
+  // table starts
   var table = document.getElementById("content");
 
   var djangoData = JSON.parse(e.data);
@@ -104,6 +106,9 @@ socket.onmessage = function (e) {
   graphData.data.datasets[3].data = newGraphData;
 
   myChart.update();
+
+  
+
 };
 
 socket.onclose = function (e) {
