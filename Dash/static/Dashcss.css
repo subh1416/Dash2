@@ -12,11 +12,13 @@ body {
   background-color: #f2f2f2;
 }
 
+
+
 .slide {
   text-align: left;
-  height: 500px;
+  height: 100%;
   width: 200px;
-  position: absolute;
+  position: fixed;
   background-color: black;
   transition: 0.5s ease;
   transform: translateX(-200px);
@@ -45,11 +47,14 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   transition: 0.2s ease-out;
+  align-items: center;
 }
 
 .slide ul li:hover a {
   color: black;
   background-color: white;
+  border-radius: 20px;
+  width: 90%;
 }
 
 .slide ul li a i {
@@ -57,14 +62,18 @@ body {
   text-align: center;
 }
 
+ol, ul {
+  padding-left: 1rem;
+}
+
 #logout {
   color: wheat;
   list-style: none;
-  text-align: right;
+  text-align: center;
   text-transform: capitalize;
-  position: absolute;
+
   bottom: 2%;
-  padding: 55px;
+  padding: 32px;
   font-weight: 500;
   transition: 0.2s ease-out;
   position: fixed;
@@ -72,7 +81,9 @@ body {
 
 #logout:hover a {
   color: #ee5253;
-  background-color: black;
+  background-color: white;
+  width: 150%;
+  border-radius: 30px;
 }
 
 input {
@@ -82,7 +93,7 @@ input {
 }
 
 .toggle {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
   height: 30px;
