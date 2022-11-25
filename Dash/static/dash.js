@@ -33,7 +33,7 @@ const graphData = {
   },
   options: {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
   },
 };
 const myChart = new Chart(ctx, graphData);

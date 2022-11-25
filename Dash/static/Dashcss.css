@@ -162,7 +162,7 @@ input:checked ~ .slide {
 
 .card img {
   align-items: center;
-  height: 400px;
+  height: 700px;
 }
 
 .card:hover {
