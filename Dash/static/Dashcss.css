@@ -5,11 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  z-index: 0;
 }
 
 body {
   background-color: #f2f2f2;
+  height: 700px;
+  overflow: hidden;
 }
 
 
@@ -21,16 +22,16 @@ body {
   position: fixed;
   background-color: black;
   transition: 0.5s ease;
-  transform: translateX(-200px);
-  z-index: 3;
+  transform: translateX(-212px);
+  left: 0;
   top: 0;
 }
 
 .slide h1 {
   color: whitesmoke;
   font-weight: 800;
-  text-align: right;
-  padding: 10px 0;
+  text-align: center;
+  padding: 9px 48px;
   padding-right: 30px;
   pointer-events: none;
 }
@@ -62,7 +63,8 @@ body {
   text-align: center;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1rem;
 }
 
@@ -86,6 +88,29 @@ ol, ul {
   border-radius: 30px;
 }
 
+.subhhh {
+  position: fixed;
+  width: 100%;
+  background: black;
+  height: 54px;
+  display:  flex;
+  justify-content:  center;
+  padding-top: 19px;
+  color: white;
+  font-size: large;
+  font-family: 'Noto Sans', sans-serif;
+  top: 0;
+}
+
+.foots {
+  position: fixed;
+  width: 100%;
+  background: black;
+  height: 54px;
+  bottom: 0;
+ 
+}
+
 input {
   display: none;
   visibility: hidden;
@@ -93,16 +118,13 @@ input {
 }
 
 .toggle {
-  position: fixed;
-  top: 10px;
-  left: 10px;
   height: 30px;
   width: 30px;
   cursor: pointer;
   border-radius: 2px;
   background-color: gray;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 4;
+  z-index: 909;
 }
 
 .toggle .common {
@@ -115,20 +137,20 @@ input {
 }
 
 .toggle .top_line {
-  top: 30%;
-  left: 50%;
+  top: 32%;
+  left: 25.4px;
   transform: translate(-50%, -50%);
 }
 
 .toggle .middle_line {
   top: 50%;
-  left: 50%;
+  left: 25.9px;
   transform: translate(-50%, -50%);
 }
 
 .toggle .bottom_line {
   top: 70%;
-  left: 50%;
+  left: 25.9px;
   transform: translate(-50%, -50%);
 }
 
@@ -262,4 +284,17 @@ th {
 
 .down :hover {
   background-color: gray;
+}
+
+/* home.html */
+.info1{
+  position: relative;
+  width: max-content;
+  text-align: center;
+  margin: 50px;
+  padding: 43px;
+  height: 70px;
+  background-color: aliceblue;
+  top: 62px;
+  font-family: 'Noto Sans', sans-serif;
 }
